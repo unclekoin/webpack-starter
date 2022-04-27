@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const miniCss = require('mini-css-extract-plugin');
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
@@ -28,8 +29,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.(s*)css$/, use: [
+          miniCss.loader,
+          'css-loader',
+          'sass-loader']
       },
       {
         test: /\.js$/,
@@ -52,6 +55,9 @@ module.exports = {
       title: 'Webpack Starter',
       filename: 'index.html',
       template: 'src/template.html',
+    }),
+    new miniCss({
+      filename: 'styles/[name].css',
     }),
     // new BundleAnalyzerPlugin(),
   ],

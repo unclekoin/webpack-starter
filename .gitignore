@@ -2,6 +2,7 @@ node_modules/
 dist/
 .idea/
 .vscode/
+.DS_Store
 
 # Local History for Visual Studio Code
 .history/
