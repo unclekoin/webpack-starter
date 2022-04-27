@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.idea/
+.vscode/
+
+# Local History for Visual Studio Code
+.history/
