@@ -1,5 +1,4 @@
-import './favicon.ico';
-import './styles/main.scss';
+import './index.scss';
 import app from './app';
 
 const root = document.getElementById('root');

@@ -1,4 +1,4 @@
-import logo from './assets/images/logo.png'
+import logo from './assets/images/logo.png';
 
 const app = document.createElement('div');
 app.className = 'app';
@@ -12,7 +12,7 @@ title.textContent = 'Webpack Starter';
 const image = document.createElement('img');
 image.src = logo;
 
-container.append(title, image)
+container.append(title, image);
 
 app.append(container);
 
